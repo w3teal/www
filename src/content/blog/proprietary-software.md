@@ -5,6 +5,8 @@ featured: true
 description:
   Proud to use open source software, adore it but 
   still proprietary software cannot be replaced
+tags:
+  - reasons
 ---
 
 

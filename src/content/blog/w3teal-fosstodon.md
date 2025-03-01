@@ -4,6 +4,8 @@ title: W3Teal & Fosstodon
 description:
   Choosing an instance on Mastodon is hard, I really like 
   Fosstodon because it has dev, web, and FOSS themes.
+tags:
+  - personal
 ---
 
 > _Choosing an instance on Mastodon is hard, I really like Fosstodon because it has dev, web, and FOSS themes. Also this instance has been around for a long time (2018, I still don't know anything about programming), and still has updates until now. I appreciate the Invite-only decision to reduce and give wide space to developers who really want to. (Although the approval request is enough, but this can also train how to communicate according to each person's way)._

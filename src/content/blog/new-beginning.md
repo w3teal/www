@@ -4,6 +4,8 @@ title: New beginning
 featured: true
 description:
   New beginning of me, W3Teal.
+tags:
+  - event
 ---
 
 Welcome to a first website i created as "W3Teal".  
