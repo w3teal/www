@@ -15,7 +15,7 @@ export interface Props {
 
 const { frontmatter } = Astro.props;
 
-const validNavs = ["home", "posts", "archives", "tags", "about", "more", "search"] as const;
+const validNavs = ["home", "posts", "archives", "tags", "about", "slashes", "search"] as const;
 const activeNav = validNavs.includes(frontmatter.nav) ? frontmatter.nav : undefined;
 ---
 
