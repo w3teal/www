@@ -9,14 +9,18 @@ export interface Props {
   frontmatter: {
     title: string;
     description?: string;
+    nav?: string;
   };
 }
 
 const { frontmatter } = Astro.props;
+
+const validNavs = ["home", "posts", "archives", "tags", "about", "more", "search"] as const;
+const activeNav = validNavs.includes(frontmatter.nav) ? frontmatter.nav : undefined;
 ---
 
 <Layout title={`${frontmatter.title} | ${SITE.title}`}>
-  <Header activeNav="about" />
+  <Header activeNav={activeNav} />
   <Breadcrumbs />
   <main id="main-content">
     <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">

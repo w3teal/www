@@ -38,10 +38,16 @@
   a {
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
-  .logow3 {
-    @apply text-skin-accent h-16 w-16;
+  .notbyai {
+    @apply ml-2;
   }
-  svg:not(.logow3) {
+  .notbyai .bg {
+    @apply stroke-skin-base;
+  }
+  .notbyai path:not(.bg) {
+    @apply fill-skin-base group-hover:fill-skin-accent;
+  }
+  svg:not(.notbyai) {
     @apply inline-block h-6 w-6 fill-skin-base group-hover:fill-skin-accent;
   }
   svg.icon-tabler {
@@ -69,6 +75,26 @@
   }
   .prose h2#table-of-contents + p {
     @apply hidden;
+  }
+
+  /* ===== Menu Icons ===== */
+  #menu-home {
+    @apply before:content-['🏠'];
+  }
+  #menu-posts {
+    @apply before:content-['📬'];
+  }
+  #menu-posts.active {
+    @apply before:content-['📫'];
+  }
+  #menu-about {
+    @apply before:content-['🙋‍♂️'];
+  }
+  #menu-about.active {
+    @apply before:content-['🙋'];
+  }
+  #menu-more {
+    @apply before:content-['✨'];
   }
 
   /* ===== scrollbar ===== */
@@ -118,6 +144,15 @@
     font-weight: var(--shiki-dark-font-weight) !important;
     text-decoration: var(--shiki-dark-text-decoration) !important;
   }
+
+  .prose :where(blockquote) {
+    font-weight: inherit !important;
+  }
+
+  .prose :where(blockquote p:first-of-type)::before,
+  .prose :where(blockquote p:last-of-type)::after {
+    content: none !important;
+  }
 }
 
 @layer components {
@@ -126,5 +161,8 @@
   }
   .focus-outline {
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
+  }
+  .stroke-skin-base {
+    stroke: rgb(var(--color-text-base));
   }
 }

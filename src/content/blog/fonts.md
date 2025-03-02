@@ -1,5 +1,5 @@
 ---
-title: Inter, beautiful. personal.
+title: Selecting my favorite fonts
 description: A beautiful font from the default, no need to be tacky.
 pubDatetime: 2025-03-01T05:00:31.123Z
 tags:

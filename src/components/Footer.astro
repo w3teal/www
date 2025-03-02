@@ -1,6 +1,7 @@
 ---
 import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
+import NotByAI from "./NotByAI.astro";
 
 const currentYear = new Date().getFullYear();
 
@@ -14,6 +15,9 @@ const { noMarginTop = false } = Astro.props;
 <footer class={`${noMarginTop ? "" : "mt-auto"}`}>
   <Hr noPadding />
   <div class="footer-wrapper">
+    <a href="/ai">
+      <NotByAI />
+    </a>
     <Socials centered />
     <div class="copyright-wrapper">
       <span>Copyright &#169; {currentYear}</span>
@@ -37,7 +41,7 @@ const { noMarginTop = false } = Astro.props;
     @apply scale-125;
   }
   .copyright-wrapper {
-    @apply my-2 flex flex-col items-center whitespace-nowrap sm:flex-row;
+    @apply my-2 flex flex-auto flex-col items-center whitespace-nowrap sm:flex-row;
   }
   .separator {
     @apply hidden sm:inline;
