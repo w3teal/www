@@ -3,7 +3,7 @@ layout: ../layouts/BasicLayout.astro
 title: "Blogroll"
 ---
 
-> Updated in March 2, 2025. Inspired by [Lou Plummer](https://amerpie.lol/blogroll/).
+> Updated in March 3, 2025. Inspired by [Lou Plummer](https://amerpie.lol/blogroll/).
 
 - https://paul.af/
 - https://amerpie.lol/
@@ -14,3 +14,5 @@ title: "Blogroll"
 - https://jagatsoker.blogspot.com/
 - https://birming.com/
 - https://ariq.nauf.al/blog/
+- https://www.kytta.dev/
+- https://fyr.io/
